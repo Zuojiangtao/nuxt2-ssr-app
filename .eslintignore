@@ -1,0 +1,35 @@
+*.json
+*.html
+*rc.js
+*.svg
+*.woff
+*.ttf
+*.css
+*.sh
+*.md
+
+.vscode
+.idea
+
+.nuxt
+.husky
+
+package.json
+tsconfig.ts
+
+# Dependency directories
+node_modules/
+
+# Optional eslint cache
+.eslintcache
+
+.local
+
+dist
+build
+/public
+/docs
+/bin
+
+Dockerfile
+Jenkinsfile
