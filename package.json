@@ -2,6 +2,8 @@
   "name": "nuxt2-ssr-app",
   "version": "1.0.0",
   "private": true,
+  "description": "A Nuxt2 project",
+  "author": "Zuojiangtao",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
