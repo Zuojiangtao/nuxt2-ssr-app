@@ -1,3 +1,5 @@
+![](/static/logo.svg)
+
 # nuxt2-ssr-app
 
 English | [中文](./docs/README.zh_CN.md)
