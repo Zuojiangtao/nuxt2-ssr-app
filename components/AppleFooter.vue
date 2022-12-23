@@ -242,5 +242,5 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import '~assets/css/apple/apple-footer.less';
+@import '~~/assets/css/apple/apple-footer.less';
 </style>
