@@ -1,5 +1,13 @@
 # nuxt2-ssr-app
 
+English | [中文](./docs/README.zh_CN.md)
+
+## Instruction
+
+There are some scenarios in project development that require SSR, such as official websites that require SEO, malls and event pages that require higher performance, etc. So learn Nuxt and make a demo by the way.
+
+This project is based on the learning project of [Apple China](https://www.apple.com.cn/) based on Nuxt2. Apple China has both the official website and the mall, and the UI style and interaction are top-notch, so I chose it as a learning project.
+
 ## Build Setup
 
 ```bash
@@ -21,48 +29,49 @@ For detailed explanation on how things work, check out the [documentation](https
 
 ## Special Directories
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+```
+├─.husky            // Git 提交规范文件
+├─assets            // 存放静态资源（如：scss）
+├─layouts           // 页面主要布局、自定义错误页面
+├─components        // 页面组件
+│ ├─business        // 业务组件
+│ ├─common          // 公用组件
+│
+├─docs              // 文档说明
+├─middleware        // 应用中间件（如：权限验证）
+│
+├─mixins            // 公用逻辑抽离（如：触底事件）
+│
+├─pages             // 页面视图
+│
+├─plugins           // 插件（如：axios、api）
+│
+├─server            // 服务端
+│ ├─request         // 请求方法封装
+│
+├─store             // vuex
+├─utils             // 工具方法
+├─.editorconfig     // 编辑器相关设置
+├─.eslintignore     // Eslint 配置忽略文件
+├─.eslintrc.js      // Eslint 配置文件
+├─.gitignore        // Git 忽略文件
+├─.prettierignore   // prettier 忽略文件
+├─.prettierrc       // prettier 配置文件
+├─commitlint.config.js // Git 提交commit钩子类型设置
+├─jsconfig.json     // JS 功能配置文件
+├─package.json      // 包依赖文件
+├─nuxt.config.js    // Nuxt.js应用配置
+├─README.md         // README.md
+├─stylelint.config.js  // stylelint配置
+└─yarn.lock         // yarn锁定版本文件
+```
 
-### `assets`
+## Project effect
 
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+### home page effect
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
+![](./assets/image/apple/apple_home.gif)
 
-### `components`
+## Guide
 
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
-
-### `layouts`
-
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
-### `pages`
-
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
-
-### `plugins`
-
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
-
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+[Development Guide](./docs/Guide.md)
